@@ -243,5 +243,9 @@ async def _generate_single(
         }
 
 
-if __name__ == "__main__":
+def run_server():
+    """入口函数，用于命令行调用"""
     mcp.run()
+
+if __name__ == "__main__":
+    run_server()

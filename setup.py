@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="jimeng-mcp-volcengine",
-    version="1.0.0",
+    version="1.0.1",
     author="Ceeon",
     author_email="your-email@example.com",  # 替换为您的邮箱
     description="即梦AI MCP服务器 - 火山引擎官方API直连版本",
@@ -32,9 +32,10 @@ setup(
         "httpx>=0.24.0",
         "Pillow>=10.0.0",
     ],
+    py_modules=["jimeng_mcp", "image_processor"],
     entry_points={
         'console_scripts': [
-            'jimeng-mcp-volcengine=jimeng_mcp:main',
+            'jimeng-mcp-volcengine=jimeng_mcp:run_server',
         ],
     },
     keywords="mcp jimeng ai image-generation volcengine doubao seedream ark",
