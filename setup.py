@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="jimeng-mcp-volcengine",
-    version="1.0.1",
+    version="1.0.2",
     author="Ceeon",
     author_email="your-email@example.com",  # 替换为您的邮箱
     description="即梦AI MCP服务器 - 火山引擎官方API直连版本",
@@ -29,7 +29,7 @@ setup(
     python_requires=">=3.8",
     install_requires=[
         "fastmcp>=0.1.0",
-        "httpx>=0.24.0",
+        "httpx[socks]>=0.24.0",
         "Pillow>=10.0.0",
     ],
     py_modules=["jimeng_mcp", "image_processor"],
